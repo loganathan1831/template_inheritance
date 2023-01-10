@@ -1,0 +1,28 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   {% block title %}
+    <title>parant</title>
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+    {% endblock %}
+</head>
+<body>
+   
+    <button type="button" class="btn btn-secondary">parant</button>
+    {% block body-block %}
+    <button type="button" class="btn btn-tertiary" data-mdb-ripple-color="light">Tertiary</button>  
+    {% endblock %}
+
+
+
+
+
+
+
+    <script src="{% static 'js/mdb.min.js' %}"></script>
+</body>
+</html>
